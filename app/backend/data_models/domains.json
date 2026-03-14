@@ -1,0 +1,32 @@
+{
+    "title": "domains",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "domain_key": {
+            "type": "string",
+            "description": "Short unique key for URL sharing (e.g. 8-char alphanumeric)"
+        },
+        "domain_name": {
+            "type": "string",
+            "description": "Name of the domain"
+        },
+        "state_json": {
+            "type": "string",
+            "description": "Full domain state serialized as JSON string"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last updated timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "domain_key",
+        "state_json"
+    ]
+}
